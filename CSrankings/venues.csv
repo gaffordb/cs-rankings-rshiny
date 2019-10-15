@@ -1,0 +1,115 @@
+umbrella,area,canonical,alternate,default
+"Theory","act","STOC","STOC",True
+"Theory","act","FOCS","FOCS",True
+"Theory","act","SODA","SODA",True
+"AI","ai","AAAI","AAAI",True
+"AI","ai","AAAI","AAAI/IAAI",True
+"AI","ai","IJCAI","IJCAI",True
+"Systems","arch","ISCA","ISCA",True
+"Systems","arch","MICRO","MICRO",True
+"Systems","arch","ASPLOS","ASPLOS",True
+"Systems","bed","RTSS","RTSS",True
+"Systems","bed","RTAS","RTAS",True
+"Systems","bed","RTAS","IEEE Real-Time and Embedded Technology and Applications Symposium",True
+"Systems","bed","EMSOFT","EMSOFT",True
+"Interdisciplinary","bio","RECOMB","RECOMB",True
+"Interdisciplinary","bio","ISMB","ISMB",True
+"Interdisciplinary","bio","Bioinformatics","Bioinformatics",True
+"Interdisciplinary","bio","ISMB","ISMB/ECCB (Supplement of Bioinformatics)",True
+"Interdisciplinary","bio","ISMB","Bioinformatics [ISMB/ECCB]",True
+"Interdisciplinary","bio","ISMB","ISMB (Supplement of Bioinformatics)",True
+"Interdisciplinary","chi","CHI","CHI",True
+"Interdisciplinary","chi","UbiComp","UbiComp",True
+"Interdisciplinary","chi","UbiComp","Ubicomp",True
+"Interdisciplinary","chi","Pervasive","Pervasive Computing",True
+"Interdisciplinary","chi","IMWUT","Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",True
+"Interdisciplinary","chi","UIST","UIST",True
+"Systems","comm","SIGCOMM","SIGCOMM",True
+"Systems","comm","INFOCOM","INFOCOM",True
+"Systems","comm","NSDI","NSDI",True
+"Theory","crypt","CRYPTO","CRYPTO",True
+"Theory","crypt","CRYPTO","CRYPTO (1)",True
+"Theory","crypt","CRYPTO","CRYPTO (2)",True
+"Theory","crypt","CRYPTO","CRYPTO (3)",True
+"Theory","crypt","EUROCRYPT","EUROCRYPT",True
+"Theory","crypt","EUROCRYPT","EUROCRYPT (1)",True
+"Theory","crypt","EUROCRYPT","EUROCRYPT (2)",True
+"Theory","crypt","EUROCRYPT","EUROCRYPT (3)",True
+"Systems","da","ICCAD","ICCAD",True
+"Systems","da","DAC","DAC",True
+"Interdisciplinary","Interdisciplinary","graph","ACM Trans. Graph.","ACM Trans. Graph.",True
+"Interdisciplinary","graph","SIGGRAPH","SIGGRAPH",True
+"Systems","hpc","SC","SC",True
+"Systems","hpc","HPDC","HPDC",True
+"Systems","hpc","ICS","ICS",True
+"AI","ir","WWW","WWW",True
+"AI","ir","SIGIR","SIGIR",True
+"Theory","log","CAV","CAV",True
+"Theory","log","CAV","CAV (1)",True
+"Theory","log","CAV","CAV (2)",True
+"Theory","log","LICS","LICS",True
+"Theory","log","LICS","CSL-LICS",True
+"Systems","metrics","SIGMETRICS","SIGMETRICS",True
+"Systems","metrics","SIGMETRICS","SIGMETRICS/Performance",True
+"Systems","metrics","IMC","IMC",True
+"Systems","metrics","IMC","Internet Measurement Conference",True
+"AI","mlmining","NIPS","NIPS",True
+"AI","mlmining","ICML","ICML",True
+"AI","mlmining","ICML","ICML (1)",True
+"AI","mlmining","ICML","ICML (2)",True
+"AI","mlmining","ICML","ICML (3)",True
+"AI","mlmining","KDD","KDD",True
+"Systems","mobile","MobiSys","MobiSys",True
+"Systems","mobile","MobiCom","MobiCom",True
+"Systems","mobile","MobiCom","MOBICOM",True
+"Systems","mobile","SenSys","SenSys",True
+"Systems","mod","VLDB","VLDB",True
+"Systems","mod","VLDB","PVLDB",True
+"Systems","mod","SIGMOD Conference","SIGMOD Conference",True
+"AI","nlp","EMNLP","EMNLP",True
+"AI","nlp","ACL","ACL",True
+"AI","nlp","ACL","ACL (1)",True
+"AI","nlp","ACL","ACL (2)",True
+"AI","nlp","ACL","ACL (4)",True
+"AI","nlp","NAACL","NAACL",True
+"AI","nlp","NAACL","HLT-NAACL",True
+"AI","nlp","NAACL","NAACL-HLT",True
+"AI","nlp","ACL","ACL/IJCNLP",True
+"AI","nlp","ACL","COLING-ACL",True
+"AI","nlp","EMNLP","EMNLP-CoNLL",True
+"AI","nlp","EMNLP","HLT/EMNLP",True
+"Systems","ops","SOSP","SOSP",True
+"Systems","ops","OSDI","OSDI",True
+"Systems","ops","EuroSys","EuroSys",True
+"Systems","ops","USENIX Annual Technical Conference","USENIX Annual Technical Conference",True
+"Systems","ops","USENIX Annual Technical Conference","USENIX Annual Technical Conference, General Track",True
+"Systems","plan","POPL","POPL",True
+"Systems","plan","PLDI","PLDI",True
+"Interdisciplinary","robotics","ICRA","ICRA",True
+"Interdisciplinary","robotics","ICRA","ICRA (1)",True
+"Interdisciplinary","robotics","ICRA","ICRA (2)",True
+"Interdisciplinary","robotics","IROS","IROS",True
+"Interdisciplinary","robotics","Robotics: Science and Systems","Robotics: Science and Systems",True
+"Systems","sec","IEEE Symposium on Security and Privacy","IEEE Symposium on Security and Privacy",True
+"Systems","sec","ACM Conference on Computer and Communications Security","ACM Conference on Computer and Communications Security",True
+"Systems","sec","USENIX Security","USENIX Security Symposium",True
+"Systems","sec","USENIX Security","USENIX Security",True
+"Interdisciplinary","soft","ICSE","ICSE",True
+"Interdisciplinary","soft","ICSE","ICSE (1)",True
+"Interdisciplinary","soft","ICSE","ICSE (2)",True
+"Interdisciplinary","soft","SIGSOFT FSE","SIGSOFT FSE",True
+"Interdisciplinary","soft","SIGSOFT FSE","ESEC/SIGSOFT FSE",True
+"Interdisciplinary","vis","IEEE Visualization","IEEE Visualization",True
+"Interdisciplinary","vis","VR","VR",True
+"Interdisciplinary","vis","IEEE Trans. Vis. Comput. Graph.","IEEE Trans. Vis. Comput. Graph.",True
+"AI","vision","CVPR","CVPR",True
+"AI","vision","CVPR","CVPR (1)",True
+"AI","vision","CVPR","CVPR (2)",True
+"AI","vision","ICCV","ICCV",True
+"AI","vision","ECCV","ECCV (1)",True
+"AI","vision","ECCV","ECCV (2)",True
+"AI","vision","ECCV","ECCV (3)",True
+"AI","vision","ECCV","ECCV (4)",True
+"AI","vision","ECCV","ECCV (5)",True
+"AI","vision","ECCV","ECCV (6)",True
+"AI","vision","ECCV","ECCV (7)",True
