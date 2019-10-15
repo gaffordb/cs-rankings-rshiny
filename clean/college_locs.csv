@@ -1,0 +1,141 @@
+"college_name","Address","name","city_name","state","pop","lat","long","capital"
+"The University of Alabama","739 University Boulevard, Tuscaloosa, AL 35487-0100","Tuscaloosa AL","Tuscaloosa","AL",80164,33.24,-87.54,0
+"Arizona State University","P.O. Box 877705, Tempe, AZ 85287","Tempe AZ","Tempe","AZ",158313,33.39,-111.93,0
+"Northern Arizona University","South San Francisco Street, Flagstaff, AZ 86011","Flagstaff AZ","Flagstaff","AZ",58490,35.19,-111.62,0
+"Arizona State University","500 North 3rd Street, Phoenix, AZ 85004-0698","Phoenix AZ","Phoenix","AZ",1450884,33.54,-112.07,2
+"University of Arizona","1401 E University, Tucson, AZ 85721-0066","Tucson AZ","Tucson","AZ",525268,32.2,-110.89,0
+"Northern Arizona University","P.O. Box 4092, Flagstaff, AZ 86011","Flagstaff AZ","Flagstaff","AZ",58490,35.19,-111.62,0
+"California Institute of Technology","1200 E California Blvd, Pasadena, CA 91125","Pasadena CA","Pasadena","CA",146676,34.16,-118.14,0
+"University of California Berkeley","200 California Hall, Berkeley, CA 94720-1500","Berkeley CA","Berkeley","CA",99653,37.87,-122.27,0
+"University of California Davis","One Shields Avenue, Davis, CA 95616-8678","Davis CA","Davis","CA",66992,38.55,-121.74,0
+"University of California Irvine","510 Aldrich Hall, Irvine, CA 92697-1000","Irvine CA","Irvine","CA",199755,33.66,-117.8,0
+"University of California Los Angeles","405 Hilgard Ave, Los Angeles, CA 90095","Los Angeles CA","Los Angeles","CA",3911500,34.11,-118.41,0
+"University of California Riverside","900 University Ave, Riverside, CA 92521","Riverside CA","Riverside","CA",306351,33.94,-117.4,0
+"University of California San Diego","9500 Gilman Dr, La Jolla, CA 92093","La Jolla CA","La Jolla","CA",NA,NA,NA,NA
+"University of California Santa Barbara","552 University Road, Santa Barbara, CA 93106-2030","Santa Barbara CA","Santa Barbara","CA",86115,34.43,-119.72,0
+"University of California Santa Cruz","1156 High St, Santa Cruz, CA 95064","Santa Cruz CA","Santa Cruz","CA",54583,36.97,-122.04,0
+"Claremont Graduate University","150 E Tenth St, Claremont, CA 91711-6160","Claremont CA","Claremont","CA",NA,NA,NA,NA
+"Naval Postgraduate School","1 University Ave, Monterey, CA 93943-5002","Monterey CA","Monterey","CA",NA,NA,NA,NA
+"University of Southern California","University Park, Los Angeles, CA 90089-0012","Los Angeles CA","Los Angeles","CA",3911500,34.11,-118.41,0
+"University of Colorado Denver","13120 E. 19th Ave #C288-18, Aurora, CO 80045","Aurora CO","Aurora","CO",304641,39.71,-104.73,0
+"Colorado State University","102 Administration Building, Fort Collins, CO 80523","Fort Collins CO","Fort Collins","CO",131505,40.56,-105.07,0
+"Colorado School of Mines","1500 Illinois St, Golden, CO 80401","Golden CO","Golden","CO",NA,NA,NA,NA
+"Colorado State University","102 Administration Building, Fort Collins, CO 80523-0100","Fort Collins CO","Fort Collins","CO",131505,40.56,-105.07,0
+"University of Denver","2199 S. University Blvd, Denver, CO 80208","Denver CO","Denver","CO",556575,39.77,-104.87,2
+"University of Connecticut","352 Mansfield Rd. Unit 2048, Storrs, CT 06269-2048","Storrs CT","Storrs","CT",NA,NA,NA,NA
+"Yale University","105 Wall Street, New Haven, CT 06520","New Haven CT","New Haven","CT",125030,41.31,-72.92,0
+"University of Delaware","104 Hullihen Hall, Newark, DE 19716","Newark DE","Newark","DE",NA,NA,NA,NA
+"Georgetown University","37th and O St NW, Washington, DC 20057","Washington DC","Washington","DC",NA,NA,NA,NA
+"Florida Atlantic University","777 Glades Rd, Boca Raton, FL 33431-0991","Boca Raton FL","Boca Raton","FL",81868,26.37,-80.11,0
+"Florida Institute of Technology","150 West University Boulevard, Melbourne, FL 32901-6975","Melbourne FL","Melbourne","FL",77320,28.11,-80.64,0
+"Florida International University","11200 SW 8th Street, Miami, FL 33199","Miami FL","Miami","FL",386740,25.78,-80.21,0
+"Florida State University","222 South Copeland Street, Tallahassee, FL 32306-1470","Tallahassee FL","Tallahassee","FL",154114,30.46,-84.28,2
+"University of Florida","300 SW 13th Street, Gainesville, FL 32611","Gainesville FL","Gainesville","FL",127933,29.67,-82.34,0
+"Nova Southeastern University","3301 College Ave, Fort Lauderdale, FL 33314-7796","Fort Lauderdale FL","Fort Lauderdale","FL",173597,26.14,-80.14,0
+"University of South Florida","4202 East Fowler Ave, Tampa, FL 33620-9951","Tampa FL","Tampa","FL",328578,27.96,-82.48,0
+"Emory University","1520 Clifton Rd. NE, Atlanta, GA 30322","Atlanta GA","Atlanta","GA",424096,33.76,-84.42,2
+"Georgia State University","33 Gilmer St SE, Atlanta, GA 30302-3083","Atlanta GA","Atlanta","GA",424096,33.76,-84.42,2
+"University of Georgia","456 East Broad Street, Athens, GA 30602","Athens GA","Athens","GA",NA,NA,NA,NA
+"Boise State University","1910 University Dr, Boise, ID 83725","Boise ID","Boise","ID",193628,43.61,-116.23,2
+"University of Idaho","875 Perimeter Drive, Moscow, ID 83844-2282","Moscow ID","Moscow","ID",NA,NA,NA,NA
+"University of Chicago","5801 S Ellis Ave, Chicago, IL 60637","Chicago IL","Chicago","IL",2830144,41.84,-87.68,0
+"DePaul University","14 E. Jackson Blvd, Chicago, IL 60604","Chicago IL","Chicago","IL",2830144,41.84,-87.68,0
+"DePaul University","1 East Jackson Blvd., Chicago, IL 60604","Chicago IL","Chicago","IL",2830144,41.84,-87.68,0
+"University of Illinois at Chicago","601 S. Morgan St. ; M/C 102, Chicago, IL 60607-7128","Chicago IL","Chicago","IL",2830144,41.84,-87.68,0
+"University of Illinois at Urbana Champaign","601 E John Street, Champaign, IL 61820-5711","Champaign IL","Champaign","IL",76999,40.11,-88.26,0
+"Illinois Institute of Technology","10 W. 35th Street, Chicago, IL 60616","Chicago IL","Chicago","IL",2830144,41.84,-87.68,0
+"Northwestern University","633 Clark St, Evanston, IL 60208","Evanston IL","Evanston","IL",75419,42.05,-87.69,0
+"Indiana State University","200 N 7th St, Terre Haute, IN 47809","Terre Haute IN","Terre Haute","IN",56544,39.47,-87.38,0
+"University of Notre Dame","Main Building, Notre Dame, IN 46556","Notre Dame IN","Notre Dame","IN",NA,NA,NA,NA
+"University of Iowa","101 Jessup Hall, Iowa City, IA 52242-1316","Iowa City IA","Iowa City","IA",64490,41.66,-91.54,0
+"University of Kansas","230 Strong Hall 1450 Jayhawk Blvd., Lawrence, KS 66045-7535","Lawrence KS","Lawrence","KS",83948,38.96,-95.26,0
+"Kansas State University","110 Anderson Hall, Manhattan, KS 66506","Manhattan KS","Manhattan","KS",45671,39.19,-96.59,0
+"University of Kentucky","101 Main Building, Lexington, KY 40506-0032","Lexington KY","Lexington","KY",274245,38.04,-84.46,0
+"University of Louisville","2301 S 3rd St, Louisville, KY 40292-0001","Louisville KY","Louisville","KY",241072,38.22,-85.74,0
+"University of New Orleans","2000 Lakeshore Drive, New Orleans, LA 70148","New Orleans LA","New Orleans","LA",454207,30.07,-89.93,0
+"Tulane University","6823 Saint Charles Avenue, New Orleans, LA 70118-5698","New Orleans LA","New Orleans","LA",454207,30.07,-89.93,0
+"Johns Hopkins University","3400 N Charles St, Baltimore, MD 21218-2688","Baltimore MD","Baltimore","MD",602658,39.3,-76.61,0
+"University of Maryland Baltimore County","1000 Hilltop Circle, Baltimore, MD 21250","Baltimore MD","Baltimore","MD",602658,39.3,-76.61,0
+"University of Maryland College Park","Main Administration Building, College Park, MD 20742-0001","College Park MD","College Park","MD",NA,NA,NA,NA
+"Towson University","8000 York Rd, Towson, MD 21252-0001","Towson MD","Towson","MD",54075,39.4,-76.62,0
+"Boston College","140 Commonwealth Ave, Chestnut Hill, MA 02467","Chestnut Hill MA","Chestnut Hill","MA",NA,NA,NA,NA
+"Harvard University","Massachusetts Hall, Cambridge, MA 02138","Cambridge MA","Cambridge","MA",101342,42.38,-71.12,0
+"University of Massachusetts Lowell","1 University Ave, Lowell, MA 01854","Lowell MA","Lowell","MA",103085,42.64,-71.32,0
+"University of Massachusetts Amherst","181 Presidents Drive, Amherst, MA 01003","Amherst MA","Amherst","MA",NA,NA,NA,NA
+"University of Massachusetts Boston","100 Morrissey Blvd, Boston, MA 02125-3393","Boston MA","Boston","MA",567759,42.34,-71.02,2
+"Massachusetts Institute of Technology","77 Massachusetts Avenue, Cambridge, MA 02139-4307","Cambridge MA","Cambridge","MA",101342,42.38,-71.12,0
+"Worcester Polytechnic Institute","100 Institute Road, Worcester, MA 01609-2280","Worcester MA","Worcester","MA",177973,42.27,-71.81,0
+"Concordia University","4090 Geddes Rd., Ann Arbor, MI 48105","Ann Arbor MI","Ann Arbor","MI",113716,42.28,-83.73,0
+"Michigan State University","450 Administration Bldg., East Lansing, MI 48824-1046","East Lansing MI","East Lansing","MI",48618,42.74,-84.48,0
+"Michigan Technological University","1400 Townsend Drive, Houghton, MI 49931-1295","Houghton MI","Houghton","MI",NA,NA,NA,NA
+"University of Michigan Dearborn","4901 Evergreen Rd, Dearborn, MI 48128-1491","Dearborn MI","Dearborn","MI",94681,42.31,-83.21,0
+"Oakland University","2200 North Squirrel Road, Rochester, MI 48309-4401","Rochester MI","Rochester","MI",NA,NA,NA,NA
+"Wayne State University","656 West Kirby Street, Detroit, MI 48202","Detroit MI","Detroit","MI",871789,42.38,-83.1,0
+"Western Michigan University","1903 West Michigan Avenue, Kalamazoo, MI 49008-5167","Kalamazoo MI","Kalamazoo","MI",73504,42.27,-85.59,0
+"University of Mississippi","P.O. Box 1848, University, MS 38677-1848","University MS","University","MS",NA,NA,NA,NA
+"Mississippi State University","262 Lee boulevard, Mississippi State, MS 39762","Mississippi State MS","Mississippi State","MS",NA,NA,NA,NA
+"University of Southern Mississippi","118 College Drive # 0001, Hattiesburg, MS 39406-0001","Hattiesburg MS","Hattiesburg","MS",48728,31.31,-89.31,0
+"University of Missouri Kansas City","5100 Rockhill Rd, Kansas City, MO 64110","Kansas City MO","Kansas City","MO",441833,39.12,-94.55,0
+"Washington University in St Louis","One Brookings Dr, Saint Louis, MO 63130","Saint Louis MO","Saint Louis","MO",315546,38.64,-90.24,0
+"Concordia University","800 N Columbia Ave, Seward, NE 68434","Seward NE","Seward","NE",NA,NA,NA,NA
+"University of Nebraska Omaha","6001 Dodge St, Omaha, NE 68182-0225","Omaha NE","Omaha","NE",417809,41.26,-96.01,0
+"Dartmouth College","207 Parkhurst Hall, Hanover, NH 03755","Hanover NH","Hanover","NH",NA,NA,NA,NA
+"Princeton University","One Nassau Hall, Princeton, NJ 08544-0015","Princeton NJ","Princeton","NJ",NA,NA,NA,NA
+"Stevens Institute of Technology","Castle Point On Hudson, Hoboken, NJ 07030-5991","Hoboken NJ","Hoboken","NJ",39972,40.74,-74.03,0
+"University of New Mexico","University of New Mexico, Albuquerque, NM 87131","Albuquerque NM","Albuquerque","NM",494962,35.12,-106.62,0
+"New Mexico State University","P.O. Box 30001, Las Cruces, NM 88003-8001","Las Cruces NM","Las Cruces","NM",81473,32.34,-106.76,0
+"Cornell University","300 Day Hall, Ithaca, NY 14853","Ithaca NY","Ithaca","NY",NA,NA,NA,NA
+"New York University","70 Washington Square South, New York, NY 10012-1091","New York NY","New York","NY",8124427,40.67,-73.94,0
+"Rensselaer Polytechnic Institute","110 8th St, Troy, NY 12180-3590","Troy NY","Troy","NY",47993,42.73,-73.68,0
+"Rochester Institute of Technology","1 Lomb Memorial Dr, Rochester, NY 14623-5603","Rochester NY","Rochester","NY",209587,43.17,-77.62,0
+"University of Rochester","Wallis Hall, Rochester, NY 14627","Rochester NY","Rochester","NY",209587,43.17,-77.62,0
+"Duke University","103 Allen Bldg, Durham, NC 27708","Durham NC","Durham","NC",208426,35.98,-78.91,0
+"North Carolina State University","20 Watauga Club Drive, Raleigh, NC 27695","Raleigh NC","Raleigh","NC",350822,35.82,-78.66,2
+"North Dakota State University","PO Box 5014, Fargo, ND 58105","Fargo ND","Fargo","ND",92396,46.88,-96.82,0
+"North Dakota State University","1301  12th Avenue North, Fargo, ND 58105-5167","Fargo ND","Fargo","ND",92396,46.88,-96.82,0
+"Oklahoma State University","900 N. Portland Ave., Oklahoma City, OK 73107","Oklahoma City OK","Oklahoma City","OK",538141,35.47,-97.51,2
+"Case Western Reserve University","10900 Euclid Ave, Cleveland, OH 44106","Cleveland OH","Cleveland","OH",443949,41.48,-81.68,0
+"University of Cincinnati","P.O. Box 210063, Cincinnati, OH 45221-0063","Cincinnati OH","Cincinnati","OH",301561,39.14,-84.51,0
+"Kent State University","P.O. Box 5190, Kent, OH 44242-0001","Kent OH","Kent","OH",NA,NA,NA,NA
+"Ohio State University","1585 Neil Avenue, Columbus, OH 43210","Columbus OH","Columbus","OH",741677,39.99,-82.99,2
+"Oklahoma State University","107 Whitehurst Hall, Stillwater, OK 74078","Stillwater OK","Stillwater","OK",43473,36.13,-97.07,0
+"University of Tulsa","800 South Tucker Drive, Tulsa, OK 74104-3189","Tulsa OK","Tulsa","OK",379833,36.13,-95.92,0
+"Concordia University","2811 NE Holman Street, Portland, OR 97211-6099","Portland OR","Portland","OR",542751,45.54,-122.66,0
+"Oregon State University",", Corvallis, OR 97331","Corvallis OR","Corvallis","OR",50932,44.57,-123.28,0
+"University of Oregon","110 Johnson Hall, Eugene, OR 97403","Eugene OR","Eugene","OR",146483,44.05,-123.11,0
+"Portland State University","724 SW Harrison, Portland, OR 97201","Portland OR","Portland","OR",542751,45.54,-122.66,0
+"Carnegie Mellon University","5000 Forbes Ave, Pittsburgh, PA 15213-3890","Pittsburgh PA","Pittsburgh","PA",316272,40.44,-79.98,0
+"Drexel University","3141 Chestnut St, Philadelphia, PA 19104","Philadelphia PA","Philadelphia","PA",1439814,40.01,-75.13,0
+"Lehigh University","27 Memorial Drive West, Bethlehem, PA 18015","Bethlehem PA","Bethlehem","PA",74087,40.63,-75.37,0
+"Pennsylvania State University","201 Old Main Building, University Park, PA 16802-1589","University Park PA","University Park","PA",NA,NA,NA,NA
+"Temple University","1801 North Broad Street, Philadelphia, PA 19122-6096","Philadelphia PA","Philadelphia","PA",1439814,40.01,-75.13,0
+"Brown University","1 Prospect St, Providence, RI 02912","Providence RI","Providence","RI",178295,41.82,-71.42,2
+"Clemson University","201 Sikes Hall, Clemson, SC 29634","Clemson SC","Clemson","SC",NA,NA,NA,NA
+"University of Memphis","341 Administration Building, Memphis, TN 38152","Memphis TN","Memphis","TN",639736,35.11,-90.01,0
+"Vanderbilt University","2101 West End Avenue, Nashville, TN 37240","Nashville TN","Nashville","TN",523547,36.17,-86.78,2
+"University of Houston","4800 Calhoun Rd., Houston, TX 77204-2018","Houston TX","Houston","TX",2043005,29.77,-95.39,0
+"University of North Texas","1155 Union Circle #311277, Denton, TX 76203","Denton TX","Denton","TX",105431,33.21,-97.13,0
+"Rice University","6100 S Main, Houston, TX 77005","Houston TX","Houston","TX",2043005,29.77,-95.39,0
+"Southern Methodist University","6425 Boaz St, Dallas, TX 75275-0221","Dallas TX","Dallas","TX",1216543,32.79,-96.77,0
+"Texas A M University","Texas A&M University, College Station, TX 77843","College Station TX","College Station","TX",80627,30.6,-96.31,0
+"University of Texas at Austin","110 Inner Campus Drive, Austin, TX 78712","Austin TX","Austin","TX",683404,30.31,-97.75,2
+"Brigham Young University","Main Campus, Provo, UT 84602","Provo UT","Provo","UT",105832,40.25,-111.64,0
+"Utah State University","Old Main Hill, Logan, UT 84322-1400","Logan UT","Logan","UT",45262,41.74,-111.84,0
+"University of Utah","201 Presidents Circle, Salt Lake City, UT 84112-9008","Salt Lake City UT","Salt Lake City","UT",177318,40.78,-111.93,2
+"University of Vermont","85 S Prospect St, Burlington, VT 05405-0160","Burlington VT","Burlington","VT",NA,NA,NA,NA
+"College of William and Mary","P.O. Box 8795, Williamsburg, VA 23187-8795","Williamsburg VA","Williamsburg","VA",NA,NA,NA,NA
+"George Mason University","4400 University Dr, Fairfax, VA 22030-4444","Fairfax VA","Fairfax","VA",NA,NA,NA,NA
+"Old Dominion University","5115 Hampton Blvd, Norfolk, VA 23529","Norfolk VA","Norfolk","VA",248182,36.92,-76.24,0
+"Virginia Commonwealth University","910 W Franklin St, Richmond, VA 23284-2512","Richmond VA","Richmond","VA",189498,37.53,-77.47,2
+"University of Virginia","1707 University Avenue, Charlottesville, VA 22904","Charlottesville VA","Charlottesville","VA",NA,NA,NA,NA
+"Washington State University","French Administration Building, Pullman, WA 99164-1009","Pullman WA","Pullman","WA",NA,NA,NA,NA
+"University of Washington","P.O. Box 351230, Seattle, WA 98195-4550","Seattle WA","Seattle","WA",570430,47.62,-122.35,0
+"West Virginia University","Presidents Office Box 6201, Morgantown, WV 26506-6201","Morgantown WV","Morgantown","WV",NA,NA,NA,NA
+"Concordia University","12800 N. Lake Shore Dr., Mequon, WI 53097-2402","Mequon WI","Mequon","WI",NA,NA,NA,NA
+"University of Wisconsin Madison","500 Lincoln Dr, Madison, WI 53706","Madison WI","Madison","WI",227642,43.08,-89.39,2
+"University of Wisconsin Milwaukee","PO Box 413, Milwaukee, WI 53211","Milwaukee WI","Milwaukee","WI",575250,43.06,-87.97,0
+"University of Wyoming","1000 E. University Ave., Laramie, WY 82071","Laramie WY","Laramie","WY",NA,NA,NA,NA
+"Stanford University","450 Serra Mall, Stanford, CA 94305-2061","Stanford CA","Stanford","CA",NA,NA,NA,NA
+"Purdue University","Hovde Hall of Administration, West Lafayette, IN 47907-2040","West Lafayette IN","West Lafayette","IN",NA,NA,NA,NA
+"Arizona State University","500 North 3rd Street, Phoenix, AZ 85004-0698","Phoenix AZ","Phoenix","AZ",1450884,33.54,-112.07,2
+"West Virginia University","PO Box 6108, Morgantown, WV 26506-6108","Morgantown WV","Morgantown","WV",NA,NA,NA,NA
