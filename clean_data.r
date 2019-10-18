@@ -1,4 +1,3 @@
-
 require(geojsonio)
 require(leaflet)
 require(dplyr)
@@ -31,9 +30,9 @@ college_locs = left_join(institution_locs, us_cities, by = c("name", "state" = "
 colnames(college_locs)[colnames(college_locs)=="LocationName"] <- "college_name"
 
 ## CS Ranking data
-cs_rankings_data = read_csv("CSRankings/csrankings.csv")
-acm_fellows = read_csv("CSRankings/acm-fellows.csv")
-turing = read_csv("CSRankings/turing.csv")
+cs_rankings_data = read_csv(file.path("CSrankings", "csrankings.csv"))
+acm_fellows = read_csv(file.path("CSrankings", "acm-fellows.csv"))
+turing = read_csv(file.path("CSrankings", "turing.csv"))
 
 # Rename aliased names
 colnames(acm_fellows)[colnames(acm_fellows)=="year"] <- "acm_year"
@@ -43,10 +42,10 @@ colnames(turing)[colnames(turing)=="year"] <- "turing_year"
 cs_rankings_data = left_join(cs_rankings_data, acm_fellows, by="name")
 cs_rankings_data = left_join(cs_rankings_data, turing, by="name")
 
-venues = read_csv("CSRankings/venues.csv")
+venues = read_csv(file=file.path("CSrankings", "venues.csv"))
 
 # Articles starts as json, unfortunately
-articles = fromJSON(file="CSRankings/articles.json")
+articles = fromJSON(file=file.path("CSrankings", "articles.json"))
 
 # Fix to be csv
 articles_melted = melt(t(as.data.frame(articles)))
@@ -85,8 +84,6 @@ cs_rankings_data = left_join(cs_rankings_data, venues, by = c("conf" = "alternat
 
 
 ## Write data 
-write.csv(cs_rankings_data, file = "clean/pubs.csv", row.names = FALSE)
-write.csv(college_locs, file = "clean/college_locs.csv", row.names = FALSE)
-write.csv(venues, file = "clean/venues.csv", row.names = FALSE)
-
-
+write.csv(cs_rankings_data, file = file.path("shiny_app", "clean", "pubs.csv"), row.names = FALSE)
+write.csv(college_locs, file = file.path("shiny_app", "clean", "college_locs.csv"), row.names = FALSE)
+write.csv(venues, file = file.path("shiny_app", "clean", "venues.csv"), row.names = FALSE)

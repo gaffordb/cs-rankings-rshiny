@@ -37,7 +37,7 @@ umbrella,area,canonical,alternate,default
 "Theory","crypt","EUROCRYPT","EUROCRYPT (3)",True
 "Systems","da","ICCAD","ICCAD",True
 "Systems","da","DAC","DAC",True
-"Interdisciplinary","Interdisciplinary","graph","ACM Trans. Graph.","ACM Trans. Graph.",True
+"Interdisciplinary","graph","ACM Trans. Graph.","ACM Trans. Graph.",True
 "Interdisciplinary","graph","SIGGRAPH","SIGGRAPH",True
 "Systems","hpc","SC","SC",True
 "Systems","hpc","HPDC","HPDC",True
@@ -94,11 +94,11 @@ umbrella,area,canonical,alternate,default
 "Systems","sec","ACM Conference on Computer and Communications Security","ACM Conference on Computer and Communications Security",True
 "Systems","sec","USENIX Security","USENIX Security Symposium",True
 "Systems","sec","USENIX Security","USENIX Security",True
-"Interdisciplinary","soft","ICSE","ICSE",True
-"Interdisciplinary","soft","ICSE","ICSE (1)",True
-"Interdisciplinary","soft","ICSE","ICSE (2)",True
-"Interdisciplinary","soft","SIGSOFT FSE","SIGSOFT FSE",True
-"Interdisciplinary","soft","SIGSOFT FSE","ESEC/SIGSOFT FSE",True
+"Systems","soft","ICSE","ICSE",True
+"Systems","soft","ICSE","ICSE (1)",True
+"Systems","soft","ICSE","ICSE (2)",True
+"Systems","soft","SIGSOFT FSE","SIGSOFT FSE",True
+"Systems","soft","SIGSOFT FSE","ESEC/SIGSOFT FSE",True
 "Interdisciplinary","vis","IEEE Visualization","IEEE Visualization",True
 "Interdisciplinary","vis","VR","VR",True
 "Interdisciplinary","vis","IEEE Trans. Vis. Comput. Graph.","IEEE Trans. Vis. Comput. Graph.",True

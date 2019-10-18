@@ -1,13 +1,5 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-
 library(shiny)
+library(shinyjs)
 require(geojsonio)
 require(leaflet)
 require(dplyr)
@@ -19,145 +11,190 @@ require(readr)
 library(shinyWidgets)
 library(viridis)
 
-pubs = read_csv("../clean/pubs.csv")
-college_locs = read_csv("../clean/college_locs.csv")
-venues = read_csv("../clean/venues.csv")
+# Get data
+pubs = read_csv(file.path("clean", "pubs.csv"))
+college_locs = read_csv(file.path("clean", "college_locs.csv"))
+venues = read_csv(file.path("clean", "venues.csv"))
+
+# Define subsections and code-names
+ai_subs = list("AI" = "ai",
+               "Computer vision" = "vision",
+               "Machine learning & data mining" = "mlmining",
+               "Natural language processing" = "nlp",
+               "The Web & information retrieval" = "ir")
+
+systems_subs = list("Computer architecture" = "arch",
+                    "Computer networks" = "comm",
+                    "Computer security" = "sec",
+                    "Databases" = "mod",
+                    "Design automation" = "da",
+                    "Embedded & real-time systems" = "bed",
+                    "High-performance computing" = "hpc",
+                    "Mobile computing" = "mobile",
+                    "Measurement & perf. analysis" = "metrics",
+                    "Operating systems" = "ops",
+                    "Programming languages" = "plan",
+                    "Software engineering" = "soft")
+
+theory_subs = list("Algorithms & complexity" = "act",
+                   "Cryptography" = "crypt",
+                   "Logic & verification" = "log")
+
+interdisciplinary_subs = list("Comp. bio & bioinformatics" = "bio",
+                              "Computer graphics" = "graph",
+                              "Economics & computation" = "ecom",
+                              "Human-computer interaction" = "chi",
+                              "Robotics" = "robotics",
+                              "Visualization" = "vis")
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
 
     # Application title
     titlePanel("CS Graduate School Exploration"),
+    shinyjs::useShinyjs(),
 
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
         sidebarPanel(
           # Switch to toggle scaling by faculty
-          materialSwitch(inputId = "scale_by_faculty", value = TRUE, label = "Scale by faculty"),
+          materialSwitch(inputId = "scale_by_faculty", value = FALSE, label = "Scale by faculty"),
 
           # Slider to select year range
-          sliderInput(inputId = "year_range", label = h3("Publication range"), min = min(pubs$year), 
-                      max = max(pubs$year), value = c(min(pubs$year), max(pubs$year)), sep = "", step = 1, animate = TRUE),
+          sliderInput(inputId = "year_range", label = h3("Publication range"), 
+                      min = min(pubs$year), max = max(pubs$year), 
+                      value = c(min(pubs$year), max(pubs$year)), sep = "", 
+                      step = 1, animate = TRUE),
           
-          checkboxGroupInput(inputId = "selected_areas", label = h3("Areas"), 
-                             choices = list("AI" = "AI", "Interdisciplinary" = "Interdisciplinary", "Systems" = "Systems", "Theory" = "Theory", "Bad" = "Bad"),
-                             selected = c("AI", "Interdisciplinary", "Systems", "Theory"))),
+          # Pickers for subsections
+          pickerInput(
+            inputId = "ai_subs",
+            label = "AI",
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE, `show-content` = FALSE),
+            choices = ai_subs,
+            selected = ai_subs
+          ),
           
-          # checkboxGroupInput(inputId = "selected_subs", label = h3("Subareas"), 
-          #                    choices = list("AI", 
-          #                                   "Computer vision", 
-          #                                   "Machine learning & data mining",
-          #                                   "Natural language processing",
-          #                                   "The Web & information retrieval",
-          #                                   "Computer architecture",
-          #                                   "Computer networks",
-          #                                   "Computer security",
-          #                                   "Databases",
-          #                                   "Design automation",
-          #                                   "Embedded & real-time systems",
-          #                                   "High-performance computing",
-          #                                   "Mobile computing",
-          #                                   "Measurement & perf. analysis",
-          #                                   "Operating systems",
-          #                                   "Programming languages",
-          #                                   "Software engineering",
-          #                                   "Algorithms & complexity",
-          #                                   "Cryptography",
-          #                                   "Logic & verification",
-          #                                   "Comp. bio & bioinformatics",
-          #                                   "Computer graphics",
-          #                                   "Economics & computation",
-          #                                   "Human-computer interaction",
-          #                                   "Robotics",
-          #                                   "Visualization"), selected = c("AI", "Computer vision", "Machine learning & data mining",
-          #                                                                  "Natural language processing",
-          #                                                                  "The Web & information retrieval",
-          #                                                                  "Computer architecture",
-          #                                                                  "Computer networks",
-          #                                                                  "Computer security",
-          #                                                                  "Databases",
-          #                                                                  "Design automation",
-          #                                                                  "Embedded & real-time systems",
-          #                                                                  "High-performance computing",
-          #                                                                  "Mobile computing",
-          #                                                                  "Measurement & perf. analysis",
-          #                                                                  "Operating systems",
-          #                                                                  "Programming languages",
-          #                                                                  "Software engineering",
-          #                                                                  "Algorithms & complexity",
-          #                                                                  "Cryptography",
-          #                                                                  "Logic & verification",
-          #                                                                  "Comp. bio & bioinformatics",
-          #                                                                  "Computer graphics",
-          #                                                                  "Economics & computation",
-          #                                                                  "Human-computer interaction",
-          #                                                                  "Robotics",
-          #                                                                  "Visualization"))
-          # 
+          pickerInput(
+            inputId = "systems_subs",
+            label = "Systems",
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE),
+            choices = systems_subs,
+            selected = systems_subs
+          ),
+          
+          pickerInput(
+            inputId = "theory_subs",
+            label = "Theory",
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE),
+            choices = theory_subs,
+            selected = theory_subs
+          ),
+          
+          pickerInput(
+            inputId = "interdisciplinary_subs",
+            label = "Interdisciplinary",
+            multiple = TRUE,
+            options = list(`actions-box` = TRUE),
+            choices = interdisciplinary_subs,
+            selected = interdisciplinary_subs
+          ),
+          
+          # Input to choose additional conferences of interest
+          selectizeInput(
+            inputId = "additional_conferences",
+            label = h3("Add conferences"),
+            choices = (unique(pubs$conf)),
+            multiple = TRUE
+          )),
+        
         
         # Show a plot of the generated distribution
         mainPanel(
-           leafletOutput("myplot")#,
-           #verbatimTextOutput("debug_text")
+           leafletOutput("myplot"),
+           verbatimTextOutput("debug_text")
         )
     )
 )
-
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-  #output$debug_text = renderPrint({"hello"})
   map_data_reactive = reactive({
-    pubs = filter(pubs, 
-                  between(year, input$year_range[1], input$year_range[2]) 
-                  & (umbrella %in% input$selected_areas) | (is.na(umbrella) & "Bad" %in% input$selected_areas))
+    # All selected areas
+    selected_areas = c(
+      input$ai_subs,
+      input$systems_subs,
+      input$theory_subs,
+      input$interdisciplinary_subs
+    )
     
-  faculty_counts = pubs %>%
-    filter(!is.na(institution)) %>%
-    group_by(institution, name) %>%
-    summarise() %>%
-    summarise(fac_counts = n())
-  
-  # Normalize by size -- is it by department -- have this toggleable might make map look better
-  # Do it by year -- might need to do it in plotly  -- might need to do map in plotly
-  # Maybe filter pubs by venue/area before doing this
-  # Maybe have pie chart pop up at each dot to show breakdown of pubs
-  counts = pubs %>%
-    filter(!is.na(institution)) %>%
-    group_by(institution) %>%
-    summarise(dis = n()) %>%
-    mutate(freq = dis / sum(dis))
-  
-  # Get area per college with most pubs
-  counts_by_area = pubs %>%
-    filter(!is.na(institution)) %>%
-    group_by(institution, umbrella) %>%
-    summarise(dis = n()) %>%
-    mutate(strong_area = umbrella[which.max(dis)])
-  
-  counts = left_join(counts, faculty_counts, by = c("institution"))
-  
-  counts = counts %>%
-    mutate(count_per_faculty = dis/fac_counts)
-  
-  # Min-max scaling to get good circle sizes
-  BIG_MARKER_SIZE = 30
-  MIN_MARKER_SIZE = 2
-  
-  counts = counts %>%
-    mutate(radius = (freq- min(freq)) / (max(freq)-min(freq)) * BIG_MARKER_SIZE + MIN_MARKER_SIZE) %>%
-    mutate(radius_by_faculty = ((count_per_faculty - min(count_per_faculty)) / (max(count_per_faculty)-min(count_per_faculty))) * BIG_MARKER_SIZE + MIN_MARKER_SIZE)
-  
-  # Only get colleges that have a corresponding location
-  map_data = left_join(counts, college_locs, by = c("institution" = "college_name"))
-  
-  # Add in counts_by_area data
-  map_data = left_join(map_data, counts_by_area, by = c("institution"))
-  
-  # Color palette
-  group_pal = colorFactor(viridis(7), map_data$strong_area)
-  map_data
+    # Needs to be a selected conf or in a selected area
+    pubs = filter(pubs,
+                  (
+                    between(year, input$year_range[1], input$year_range[2])
+                    & (area %in% selected_areas)
+                  )
+                  | conf %in% input$additional_conferences)
+    
+    # Only execute below if pubs is not empty
+    if (nrow(pubs) > 0) {
+      # Get num active faculty per univ
+      faculty_counts = pubs %>%
+        filter(!is.na(institution)) %>%
+        group_by(institution, name) %>%
+        summarise() %>%
+        summarise(fac_counts = n())
+      
+      # Get pubs per univ
+      counts = pubs %>%
+        filter(!is.na(institution)) %>%
+        group_by(institution) %>%
+        summarise(dis = n()) %>%
+        mutate(freq = dis / sum(dis))
+      
+      # Get area per univ with most pubs
+      counts_by_area = pubs %>%
+        filter(!is.na(institution)) %>%
+        group_by(institution, umbrella) %>%
+        summarise(dis = n()) %>%
+        mutate(strong_area = umbrella[which.max(dis)])
+      
+      # Add faculty_counts to counts
+      counts = left_join(counts, faculty_counts, by = c("institution"))
+      
+      counts = counts %>%
+        mutate(count_per_faculty = dis / fac_counts)
+      
+      # Min-max scaling to get good circle sizes
+      BIG_MARKER_SIZE = 30
+      MIN_MARKER_SIZE = 2
+      
+      # Add radius information
+      counts = counts %>%
+        mutate(radius = (freq - min(freq)) / (max(freq) - min(freq)) * BIG_MARKER_SIZE 
+               + MIN_MARKER_SIZE) %>%
+        mutate(radius_by_faculty = ((
+          count_per_faculty - min(count_per_faculty)) / (max(count_per_faculty) 
+                                                         - min(count_per_faculty)
+        )) * BIG_MARKER_SIZE + MIN_MARKER_SIZE)
+      
+      # Only get colleges that have a corresponding location
+      map_data = left_join(counts, college_locs, by = c("institution" = "college_name"))
+      
+      # Add in counts_by_area data
+      map_data = left_join(map_data, counts_by_area, by = c("institution"))
+      
+      map_data
+    } else {
+      NULL
+    }
   })
+  
     output$myplot <- renderLeaflet({
+      if(!is.null(map_data_reactive())) {
+      group_pal = colorFactor(viridis(7), map_data_reactive()$strong_area)
        # Make map
       if(!input$scale_by_faculty) {
       map = leaflet(data = map_data_reactive()) %>% 
@@ -172,8 +209,12 @@ server <- function(input, output) {
                            label = ~institution, radius = ~radius_by_faculty, fillColor = ~group_pal(strong_area), color = ~group_pal(strong_area), opacity=0.0, fillOpacity=0.4) %>%
           addLegend("bottomright", pal = group_pal, values = ~strong_area)
       }
+      } else {
+        map = leaflet() %>% addTiles()
+      }
       map
     })
+    
 }
 
 # Run the application 
